@@ -3,50 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Drum demo</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        html,body{
-            height: 100%;
-        }
-        object{
-            margin:0 auto;
-            display: block;
-        }
-        #praCon{
-            position: absolute;
-        }
-        #window{
-            position: relative;
-            overflow: hidden
-        }
-        .c{
-            position: absolute;
-        }
-        .btn{
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            top: 22px;
-            right: 3px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            cursor: pointer;
-            z-index: 999;
-        }
-        .b1{
-            background-image:url('imgs/btn1.png'); 
-        }
-        .b2{
-            background-image:url('imgs/btn2.png');
-        }
-        .b3{
-            width: 0;height: 0;
-        }
-    </style>
-    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="public/css/simple.css">
 </head>
 <body>
     <div id="window">
@@ -54,8 +11,8 @@
             
         </div>
     </div>
-
-    <script src="swfobject.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/swfobject.js"></script>
     <script>
         function createElement(className,id,w,h,l){
             var cdiv = document.createElement('div');
